@@ -13,3 +13,5 @@ yarn-error.log
 .idea/
 .vagrant/
 /app/Console/Commands/DummyCommand.php
+/public/css/
+/public/js/
