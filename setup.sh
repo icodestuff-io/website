@@ -13,15 +13,15 @@ fi
 
 if [ ! -f /etc/supervisor/conf.d/hoopspots.conf ]; then
     DAEMON="
-[program: icodestuff]
+[program: horizon]
 command=php /home/vagrant/code/artisan horizon
 stdout_logfile=/home/vagrant/code/storage/logs/supervisord.log
 redirect_stderr=true
 autostart=true
 autorestart=true
     "
-    echo "Creating the Icodestuff horizon daemon configuration"
-    echo "$DAEMON" | sudo tee -a /etc/supervisor/conf.d/icodestuff.conf
+    echo "Creating the horizon daemon"
+    echo "$DAEMON" | sudo tee -a /etc/supervisor/conf.d/horizon.conf
     echo "Starting Supervisor"
     sudo supervisorctl reread
     sudo supervisorctl update
