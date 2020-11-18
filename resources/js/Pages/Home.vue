@@ -1,6 +1,6 @@
 <template>
     <DefaultLayout>
-        <h1 class="font-semibold tracking-wide text-2xl">Welcome to Icodestuff!</h1>
+        <h1 class="font-semibold tracking-wide text-2xl p-2">Welcome to Icodestuff!</h1>
     </DefaultLayout>
 </template>
 
